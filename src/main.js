@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const YT_CLOUDFLARE = process.env.YT_CLOUDFLARED || true;   // 设置为true时强制使cloudflared出站访问youtube,false时自动检测是否设置warp出站
+const YT_CLOUDFLARED = process.env.YT_CLOUDFLARED || true;   // 设置为true时强制使cloudflared出站访问youtube,false时自动检测是否设置warp出站
 const FILE_PATH = process.env.FILE_PATH || './.npm';  // sub.txt订阅文件路径
 const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅sub路径，默认为sub,例如：https://google.com/sub
 const UUID = process.env.UUID || '49f69198-b32b-434d-ab8e-90a9f36deb7c';  // UUID,如果开启了哪吒v1,也会使用此uuid
